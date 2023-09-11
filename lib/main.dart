@@ -28,21 +28,25 @@ class MyFirstApp extends StatelessWidget {
           ],
           backgroundColor: Colors.redAccent,
         ),
-        body: const Column(
+        body:  Column(
           children :[ Text('You need to answer a few questions',
           style: TextStyle(fontSize: 25.00,)
           ),
           ElevatedButton(onPressed: null, 
-          
+          style: ElevatedButton.styleFrom(disabledBackgroundColor: Colors.redAccent),
           child: Text('You have chosen answer 1',
           style: TextStyle(fontSize: 25, color:Colors.blueGrey),),
 
           ),
           
-          ElevatedButton(onPressed: null, child: Text('You have chosen answer 2',
+          ElevatedButton(onPressed: null, 
+          style: ElevatedButton.styleFrom(disabledBackgroundColor: Colors.redAccent),
+          child: Text('You have chosen answer 2',
           style: TextStyle(fontSize: 25, color:Colors.blueGrey),)),
 
-          ElevatedButton(onPressed: null, child: Text('You have chosen answer 3',
+          ElevatedButton(onPressed: null, 
+          style: ElevatedButton.styleFrom(disabledBackgroundColor: Colors.redAccent),
+          child: Text('You have chosen answer 3',
           style: TextStyle(fontSize: 25, color:Colors.blueGrey),)),
           ]
         ),
