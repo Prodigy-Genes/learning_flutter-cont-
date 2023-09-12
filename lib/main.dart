@@ -1,64 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:learning_flutter/testingMy_firstApp.dart';
 
-void main() {
-  runApp(const MyFirstApp());
-}
 
-class MyFirstApp extends StatelessWidget {
-  const MyFirstApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          leading: const IconButton(
-            icon: Icon(Icons.menu),
-            tooltip: 'Navigation menu',
-            onPressed: null,),
-          title: const Text(
-            'Test Your Knowledge...',
-            style: TextStyle(fontSize: 25.0, fontStyle: FontStyle.normal),
-          ),
-          actions: const <Widget> [
-            IconButton(
-            icon: Icon(Icons.search),
-            tooltip: 'Search',
-            onPressed: null,),
-          ],
-          backgroundColor: Colors.redAccent,
-        ),
-        body:  Column(
-          children :[ Text('You need to answer a few questions',
-          style: TextStyle(fontSize: 25.00,)
-          ),
-          ElevatedButton(onPressed: null, 
-          style: ElevatedButton.styleFrom(disabledBackgroundColor: Colors.redAccent),
-          child: Text('You have chosen answer 1',
-          style: TextStyle(fontSize: 25, color:Colors.blueGrey),),
-
-          ),
-          
-          ElevatedButton(onPressed: null, 
-          style: ElevatedButton.styleFrom(disabledBackgroundColor: Colors.redAccent),
-          child: Text('You have chosen answer 2',
-          style: TextStyle(fontSize: 25, color:Colors.blueGrey),)),
-
-          ElevatedButton(onPressed: null, 
-          style: ElevatedButton.styleFrom(disabledBackgroundColor: Colors.redAccent),
-          child: Text('You have chosen answer 3',
-          style: TextStyle(fontSize: 25, color:Colors.blueGrey),)),
-          ]
-        ),
-        floatingActionButton: const FloatingActionButton(
-          tooltip: 'Add',
-          onPressed: null,
-          child: Icon(Icons.add),
-        )
-      ),
-    );
-  }
-}
+void main(List<String> args) => runApp(
+  const MaterialApp(
+    home: MyFirstApp()
+  )
+);
 
 /*
 void main() {
