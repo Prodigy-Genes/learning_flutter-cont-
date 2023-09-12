@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learning_flutter/testingMy_firstApp.dart';
 
-
-void main(List<String> args) => runApp(
-  const MaterialApp(
-    home: MyFirstApp()
-  )
-);
+void main(List<String> args) => runApp(const MyFirstApp());
 
 /*
 void main() {
