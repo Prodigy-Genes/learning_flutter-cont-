@@ -95,6 +95,13 @@ class MyStatelessScaffoldWidget extends StatelessWidget {
               style: TextStyle(fontSize: 22, color: Colors.blueGrey),
             ),
           ),
+          const Icon(
+            Icons.favorite,
+            color: Colors.pink,
+            size: 24.0,
+            semanticLabel: 'Text to announce in accessibility modes',
+
+          ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(disabledBackgroundColor: Colors.redAccent),
             onPressed: null,
@@ -103,6 +110,12 @@ class MyStatelessScaffoldWidget extends StatelessWidget {
               style: TextStyle(fontSize: 22, color: Colors.blueGrey),
             ),
           ),
+          const Icon(
+            Icons.audiotrack,
+            color: Colors.green,
+            size: 30.0,
+          ),
+          
           ElevatedButton(
             style: ElevatedButton.styleFrom(disabledBackgroundColor: Colors.redAccent),
             onPressed: null,
@@ -110,6 +123,11 @@ class MyStatelessScaffoldWidget extends StatelessWidget {
               'You Have Chosen Answer 3',
               style: TextStyle(fontSize: 22, color: Colors.blueGrey),
             ),
+          ),
+          const Icon(
+            Icons.beach_access,
+            color: Colors.blue,
+            size: 36.0
           ),
         ],
       ),
