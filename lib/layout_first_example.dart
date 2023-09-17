@@ -156,14 +156,13 @@ class MyStatelessLayoutWidget extends StatelessWidget {
           ),
 
            ElevatedButton(
-            style: ElevatedButton.styleFrom(disabledBackgroundColor: Colors.redAccent),
               onPressed: (){
                 next_page.clickNextQuestion(context);
               },
               child: const Text('Next Question',
               style: TextStyle(
                 fontSize: 22,
-                color: Colors.blueGrey,
+                color: Colors.black,
               ),),
               ),
             
