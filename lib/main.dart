@@ -1,9 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:learning_flutter/my_first_app.dart';
+//import 'package:learning_flutter/my_first_app.dart';
 //import 'package:learning_flutter/myStateless_Scaffold.dart';
+import 'package:learning_flutter/Controllers/text_field_example.dart';
+//import 'package:learning_flutter/Controllers/form_validation_state_one.dart';
 
-void main(List<String> args){ runApp(const MyFirstApp());
+
+// the state is mutable and might change during the lifetime of the widget
+// each time it redraws the widget whenever the state is changed
+// Checkbox, textfiel, RadioButton or Form are examples of Stateful widgets
+// Beginning flutter with Dart, we will learn how to work with these widgets
+
+
+void main() => runApp(const HomePage());
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+
+      title: 'Form validation and state',
+      home: TextFieldExample(),
+    );
+  }
 }
+
+
+//void main(List<String> args){ runApp(const MyFirstApp());
+//}
 
 /*
 void main() {
